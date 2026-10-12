@@ -79,13 +79,13 @@ export const projects = [
   {
     id: "01",
     featured: true,
-    category: "Full-stack",
-    title: "Tourism Management System",
-    description: "A booking and destination platform for local operators: itineraries, availability, and a calm public-facing experience designed for travelers and admins alike.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    previewType: "tourism",
-    appUrl: "sahal-tours.app",
-    demoUrl: "#contact",
+    category: "Full-stack · Fintech",
+    title: "Personal Finance & Budgeting Platform",
+    description: "A secure personal finance, expense tracking, and budgeting web application. Features interactive financial analytics, category budgeting, authentication, and real-time balance tracking.",
+    tags: ["React", "Tailwind CSS", "Node.js", "REST APIs"],
+    previewType: "finance",
+    appUrl: "finance-frontend-git-main-jeego.vercel.app",
+    demoUrl: "https://finance-frontend-git-main-jeego.vercel.app",
     githubUrl: "https://github.com/Eng-Jeego"
   },
   {

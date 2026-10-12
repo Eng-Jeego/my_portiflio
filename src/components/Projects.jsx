@@ -5,6 +5,39 @@ import { projects } from '../data/portfolioData';
 
 // Mini visual browser mockups for each project type
 function ProjectPreviewMock({ type }) {
+  if (type === 'finance') {
+    return (
+      <div className="bg-[#0b101b] rounded-xl overflow-hidden border border-[#1e293b] p-4 text-xs font-sans h-full min-h-[240px] flex flex-col justify-center items-center relative">
+        <div className="w-9 h-9 rounded-xl bg-[#059669]/20 border border-[#10b981]/30 flex items-center justify-center text-[#10b981] mb-2.5 shadow-lg shadow-[#10b981]/20">
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect width="20" height="14" x="2" y="5" rx="2" />
+            <line x1="2" x2="22" y1="10" y2="10" />
+          </svg>
+        </div>
+        <h4 className="font-bold text-white text-sm text-center">Sign in to your account</h4>
+        <p className="text-[10px] text-slate-400 text-center mb-3">Take control of your personal finances and budgeting</p>
+
+        <div className="w-full max-w-[210px] bg-[#111927]/90 rounded-xl p-3 border border-[#1e293b] space-y-2">
+          <div>
+            <div className="text-[8px] uppercase tracking-wider text-slate-400 font-mono mb-0.5">Email Address</div>
+            <div className="h-6 rounded bg-[#0b101b] border border-slate-700/60 px-2 flex items-center text-[9px] text-slate-400">
+              you@example.com
+            </div>
+          </div>
+          <div>
+            <div className="text-[8px] uppercase tracking-wider text-slate-400 font-mono mb-0.5">Password</div>
+            <div className="h-6 rounded bg-[#0b101b] border border-slate-700/60 px-2 flex items-center text-[9px] text-slate-400">
+              ••••••••
+            </div>
+          </div>
+          <div className="h-6 rounded bg-[#059669] flex items-center justify-center text-[9px] font-bold text-white shadow-sm">
+            Sign In
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (type === 'tourism') {
     return (
       <div className="bg-[#141710] rounded-xl overflow-hidden border border-white/10 p-3 text-xs font-sans h-full min-h-[220px] flex flex-col justify-between">
